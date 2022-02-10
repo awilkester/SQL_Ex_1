@@ -47,3 +47,7 @@ CREATE TABLE sales.clients (name varchar(100), salesperson_assigned varchar(80),
 
 INSERT INTO sales.salespeople VALUES ('Julia', 1000000, 371134), ('Tulla', 1000000, 498142), ('Junior', 100000, 99123), ('Kate', 1000000, 817412);
 INSERT INTO sales.clients VALUES ('Green Pastures', 'Tulla', 200000), ('Yellow Cliff', 'Tulla', 175000), ('Twilight Market', 'Julia', 75000), ('Media Maven', 'Kate', 315000);
+
+ALTER TABLE sales.salespeople RENAME TO salespeoples;
+DROP TABLE sales.salespeoples;
+TRUNCATE TABLE partners.location;
